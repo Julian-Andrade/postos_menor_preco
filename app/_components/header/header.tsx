@@ -12,12 +12,12 @@ const NAV_ITEMS = [
     href: "/",
   },
   {
-    label: "Nossa História",
-    href: "/nossa_historia",
+    label: "Nossos Produtos",
+    href: "/nossos_produtos",
   },
   {
-    label: "Produtos",
-    href: "/produtos",
+    label: "Nossa História",
+    href: "/#nossa_historia",
   },
   {
     label: "Rede de Postos",

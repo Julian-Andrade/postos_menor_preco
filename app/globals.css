@@ -15,7 +15,7 @@
     --secondary: 0 24% 17.5%;
     --secondary-foreground: 222.2 47.4% 11.2%;
     --blue: 225 100% 28%;
-    --red: 350 89% 58%;
+    --red: 350 81% 50%;
     --muted: 210 40% 96.1%;
     --muted-foreground: 215.4 16.3% 46.9%;
     --accent: 210 40% 96.1%;
@@ -63,7 +63,7 @@
 
 @layer base {
   body {
-    @apply bg-gray-100 text-gray-500;
+    @apply bg-white text-gray-500;
   }
 }
 

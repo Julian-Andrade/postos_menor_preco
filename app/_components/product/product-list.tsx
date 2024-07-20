@@ -35,14 +35,14 @@ const ProductList = () => {
   return (
     <>
       <Carousel
-        className="mx-auto w-full max-w-[1210px] px-6"
+        className="mx-auto mb-4 w-full max-w-[1210px] px-6"
         opts={{
           align: "start",
         }}
       >
         <CarouselContent>
           {PRODUCTS.map((item) => (
-            <CarouselItem key={item.label} className="basis-1/3">
+            <CarouselItem key={item.label} className="basis-[27%]">
               <CardContent className="flex items-center justify-center">
                 <ProductItem {...item} />
               </CardContent>

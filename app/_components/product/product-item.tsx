@@ -9,7 +9,7 @@ interface ProductItemProps {
 
 const ProductItem = ({ className, label, bg }: ProductItemProps) => {
   return (
-    <div className={cn("min-w-[360px]", className)}>
+    <div className={cn("min-w-[300px]", className)}>
       <div className="w-full space-y-2">
         <div className={cn("relative aspect-square w-full rounded-xl", bg)}>
           <span className="text-md absolute left-[10%] top-[72%] font-semibold text-white">

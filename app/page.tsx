@@ -1,6 +1,7 @@
 import Image from "next/image";
 import ProductList from "./_components/product/product-list";
 import SectionTitle from "./_components/title/section-title";
+import History from "./_components/history/history";
 
 const Home = () => {
   return (
@@ -22,9 +23,14 @@ const Home = () => {
           nossa linha de combustíveis, para que você continue sempre em
           movimento. Descubra nossa linha completa abaixo e visite seu posto de
           combustível Menor Preço preferido."
+        divClassName="space-y-2"
       />
 
       <ProductList />
+
+      <History />
+
+      <SectionTitle title="Rede de Postos" />
     </>
   );
 };
