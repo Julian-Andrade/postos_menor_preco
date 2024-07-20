@@ -10,12 +10,10 @@
     --card-foreground: 222.2 84% 4.9%;
     --popover: 0 0% 100%;
     --popover-foreground: 222.2 84% 4.9%;
-    --primary: 0 0% 95%;
+    --primary: 222.2 47.4% 11.2%;
     --primary-foreground: 210 40% 98%;
-    --secondary: 0 24% 17.5%;
+    --secondary: 210 40% 96.1%;
     --secondary-foreground: 222.2 47.4% 11.2%;
-    --blue: 225 100% 28%;
-    --red: 350 89% 58%;
     --muted: 210 40% 96.1%;
     --muted-foreground: 215.4 16.3% 46.9%;
     --accent: 210 40% 96.1%;
@@ -62,25 +60,10 @@
 }
 
 @layer base {
-  body {
-    @apply bg-gray-100 text-gray-500;
+  * {
+    @apply border-border;
   }
-}
-
-.container {
-  @apply mx-auto w-full max-w-[1200px] px-6;
-}
-
-*::-webkit-scrollbar {
-  width: 8px;
-}
-
-*::-webkit-scrollbar-track {
-  background: #111827;
-  border-radius: 5px;
-}
-
-*::-webkit-scrollbar-thumb {
-  background-color: #4c1d95;
-  border-radius: 14px;
+  body {
+    @apply bg-background text-foreground;
+  }
 }
