@@ -25,7 +25,7 @@ const History = () => {
 
         <div className="flex basis-1/2 items-center justify-center">
           <Image
-            src="/logo_azul.webp"
+            src="/logo_branco.webp"
             alt="Rede Menor Preço"
             height={300}
             width={400}

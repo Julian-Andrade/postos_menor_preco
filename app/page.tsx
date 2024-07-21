@@ -2,6 +2,8 @@ import Image from "next/image";
 import ProductList from "./_components/product/product-list";
 import SectionTitle from "./_components/title/section-title";
 import History from "./_components/history/history";
+import GasStationList from "./_components/gas_station/gas-station-list";
+import { GAS_STATION } from "./_components/gas_station/seed";
 
 const Home = () => {
   return (
@@ -30,7 +32,16 @@ const Home = () => {
 
       <History />
 
-      <SectionTitle title="Rede de Postos" />
+      <SectionTitle
+        title="Rede de Postos"
+        description="A Menor Preço possui uma excelente estrutura para garantir um atendimento de qualidade aos seus clientes. Conheça nossa rede de postos e desfrute de uma experiência excepcional."
+        divClassName="space-y-2"
+        button
+        buttonLabel="Confira todos os postos"
+        href="/rede_de_postos"
+      />
+
+      <GasStationList gas_station={GAS_STATION} />
     </>
   );
 };
