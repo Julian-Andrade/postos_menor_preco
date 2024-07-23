@@ -1,5 +1,5 @@
 import Image from "next/image";
-import SectionTitle from "../title/section-title";
+import SectionTitle from "../section-title/section-title";
 
 const History = () => {
   return (

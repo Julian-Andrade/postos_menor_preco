@@ -1,9 +1,10 @@
 import Image from "next/image";
 import ProductList from "./_components/product/product-list";
-import SectionTitle from "./_components/title/section-title";
+import SectionTitle from "./_components/section-title/section-title";
 import History from "./_components/history/history";
 import GasStationList from "./_components/gas_station/gas-station-list";
 import { GAS_STATION } from "./_components/gas_station/seed";
+import ContactForm from "./_components/contact-form/contact-form";
 
 const Home = () => {
   return (
@@ -42,6 +43,8 @@ const Home = () => {
       />
 
       <GasStationList gas_station={GAS_STATION} />
+
+      <ContactForm />
     </>
   );
 };
