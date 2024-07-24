@@ -1,6 +1,7 @@
 import { ClockIcon, MapPinIcon, PhoneIcon } from "lucide-react";
 import SectionTitle from "../section-title/section-title";
 import ContactForm from "./contact-form";
+import { Card } from "../ui/card";
 
 const Contact = () => {
   return (
@@ -10,10 +11,10 @@ const Contact = () => {
         description="Fale diretamente com a nossa equipe"
       />
 
-      <div className="container grid grid-cols-2 justify-center">
-        <div className="flex flex-col gap-6">
+      <div className="container grid grid-cols-2 gap-6">
+        <Card className="flex flex-col justify-evenly gap-6 bg-transparent p-12">
           <div className="space-y-1">
-            <PhoneIcon className="text-red" />
+            <PhoneIcon className="text-red" size={30} />
             <p className="text-lg font-semibold text-blue">
               Central de Relacionamento
             </p>
@@ -21,7 +22,7 @@ const Contact = () => {
           </div>
 
           <div className="space-y-1">
-            <ClockIcon className="text-red" />
+            <ClockIcon className="text-red" size={30} />
             <p className="text-lg font-semibold text-blue">
               Horário de Funcionamento
             </p>
@@ -29,13 +30,13 @@ const Contact = () => {
           </div>
 
           <div className="space-y-1">
-            <MapPinIcon className="text-red" />
+            <MapPinIcon className="text-red" size={30} />
             <p className="text-lg font-semibold text-blue">Localização</p>
             <p>
               Av. Getúlio Vargas, 1839, Ponto Central, Feira de Santana, Bahia
             </p>
           </div>
-        </div>
+        </Card>
 
         <ContactForm />
       </div>
