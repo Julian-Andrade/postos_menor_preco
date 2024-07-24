@@ -12,46 +12,48 @@ const GasStationItem: React.FC<GasStationItemProps> = ({ ...props }) => {
   const { name, src, fuel, services, address, opening } = props;
 
   return (
-    <Card className="min-w-[320px] border-0">
-      <div className="w-full space-y-2">
-        <div className="group relative aspect-square w-full rounded-xl">
-          <div>
-            <span className="text-md absolute left-2 top-3 z-10 rounded-xl bg-blue p-1 px-2 font-semibold text-white opacity-100 transition-opacity duration-300 group-hover:opacity-0">
-              {name}
-            </span>
-            <Image
-              src={src}
-              alt={name}
-              fill
-              quality={100}
-              className="shadow-ld z-0 rounded-lg object-cover group-hover:opacity-30"
-            />
-          </div>
-          <div className="absolute left-2 right-2 top-3 h-full space-y-1 object-cover opacity-0 transition-opacity duration-300 group-hover:opacity-100">
-            <p className="rounded-xl bg-white p-1 px-2 text-xs font-semibold text-blue">
-              Combustível
-            </p>
-            <Badge item={fuel} />
-            <p className="rounded-xl bg-white p-1 px-2 text-xs font-semibold text-blue">
-              Serviços
-            </p>
-            <Badge item={services} />
-            <p className="rounded-xl bg-white p-1 px-2 text-xs font-semibold text-blue">
-              Endereço
-            </p>
-            <p className="rounded-xl bg-blue px-3 py-1 text-[10px] font-semibold text-white">
-              {address}
-            </p>
-            <p className="rounded-xl bg-white p-1 px-2 text-xs font-semibold text-blue">
-              Horário de Funcionamento
-            </p>
-            <p className="rounded-xl bg-blue px-3 py-1 text-[10px] font-semibold text-white">
-              {opening}
-            </p>
-          </div>
+    <>
+      <Card className="relative flex w-full min-w-96 flex-col rounded-xl bg-white bg-clip-border text-gray-700 shadow-lg">
+        <div className="bg-blue-gray-500 shadow-blue-gray-500/40 relative mx-4 mt-4 overflow-hidden rounded-xl bg-clip-border text-white shadow-lg">
+          <Image
+            src={src}
+            alt={name}
+            width={500}
+            height={500}
+            quality={100}
+            className="z-0 rounded-lg object-cover shadow-lg group-hover:opacity-30"
+          />
+
+          <div className="to-bg-black-10 absolute inset-0 h-full w-full bg-gradient-to-tr from-transparent via-transparent to-black/60"></div>
         </div>
-      </div>
-    </Card>
+
+        <div className="p-4">
+          <div className="mb-3 flex items-center justify-between">
+            <h5 className="block text-xl font-bold text-blue">{name}</h5>
+          </div>
+          <p className="rounded-xl bg-white p-1 text-xs font-semibold text-blue">
+            Combustível
+          </p>
+          <Badge nameBadge={fuel} />
+          <p className="rounded-xl bg-white p-1 text-xs font-semibold text-blue">
+            Serviços
+          </p>
+          <Badge nameBadge={services} />
+          <p className="rounded-xl bg-white p-1 text-xs font-semibold text-blue">
+            Endereço
+          </p>
+          <p className="w-[50%] rounded-xl bg-gray-50 px-3 py-1 text-[10px] font-semibold text-gray-500">
+            {address}
+          </p>
+          <p className="rounded-xl bg-white p-1 text-xs font-semibold text-blue">
+            Horário de Funcionamento
+          </p>
+          <p className="w-[50%] rounded-xl bg-gray-50 px-3 py-1 text-[10px] font-semibold text-gray-500">
+            {opening}
+          </p>
+        </div>
+      </Card>
+    </>
   );
 };
 

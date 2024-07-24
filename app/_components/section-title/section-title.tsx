@@ -34,7 +34,7 @@ const SectionTitle = ({
         <div>
           {button && (
             <Button
-              className="h-0 items-center p-0 text-blue hover:bg-transparent hover:font-semibold hover:italic hover:text-blue"
+              className="h-0 items-center p-0 text-blue hover:bg-transparent hover:font-semibold hover:italic hover:text-red"
               variant={"ghost"}
               asChild
             >

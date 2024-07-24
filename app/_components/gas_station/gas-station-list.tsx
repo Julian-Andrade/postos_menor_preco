@@ -24,7 +24,7 @@ const GasStationList = ({ gas_station }: GasStationListProps) => {
       >
         <CarouselContent>
           {gas_station.map((gasStation) => (
-            <CarouselItem key={gasStation.name} className="basis-[29%]">
+            <CarouselItem key={gasStation.name} className="basis-[34%]">
               <CardContent className="flex items-center justify-center">
                 <GasStationItem {...gasStation} />
               </CardContent>
