@@ -25,11 +25,15 @@ const NAV_ITEMS = [
   },
   {
     label: "Trabalhe Conosco",
-    href: "/rede_de_postos",
+    href: "/trabalhe_conosco",
   },
   {
     label: "Contato",
     href: "/contato",
+  },
+  {
+    label: "Blog MP",
+    href: "/blog_mp",
   },
 ];
 
@@ -50,7 +54,7 @@ const Header = () => {
       </div>
 
       <div className="container flex items-center justify-between py-4">
-        <nav className="flex items-center gap-4 sm:gap-8">
+        <nav className="flex items-center gap-7">
           {NAV_ITEMS.map((item) => (
             <NavItem {...item} key={item.label}></NavItem>
           ))}
