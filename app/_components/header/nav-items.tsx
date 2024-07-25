@@ -17,7 +17,7 @@ const NavItem = ({ label, href }: NavItemProps) => {
       href={href}
       className={cn(
         "flex items-center text-blue hover:text-red",
-        isActive && "font-bold",
+        isActive && "font-bold text-red",
       )}
     >
       {label}

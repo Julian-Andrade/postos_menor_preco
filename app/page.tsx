@@ -20,31 +20,43 @@ const Home = () => {
         </div>
       </div>
 
-      <SectionTitle
-        title="Nossos Produtos"
-        description="A Menor Preço aprimora sua viagem com a excelência e o desempenho da
-          nossa linha de combustíveis, para que você continue sempre em
-          movimento. Descubra nossa linha completa abaixo e visite seu posto de
-          combustível Menor Preço preferido."
-        divClassName="space-y-2"
-      />
+      <section id="nossos_produtos">
+        <SectionTitle
+          title="Nossos Produtos"
+          description="A Menor Preço aprimora sua viagem com a excelência e o desempenho da
+            nossa linha de combustíveis, para que você continue sempre em
+            movimento. Descubra nossa linha completa abaixo e visite seu posto de
+            combustível Menor Preço preferido."
+          divClassName="space-y-2"
+        />
+        <ProductList />
+      </section>
 
-      <ProductList />
+      <section id="nossa_historia" className="h-96 bg-gray-50">
+        <SectionTitle title="Nossa História" divClassName="py-7" />
 
-      <History />
+        <History />
+      </section>
 
-      <SectionTitle
-        title="Rede de Postos"
-        description="A Menor Preço possui uma excelente estrutura para garantir um atendimento de qualidade aos seus clientes. Conheça nossa rede de postos e desfrute de uma experiência excepcional."
-        divClassName="space-y-2"
-        button
-        buttonLabel="Confira todos os postos"
-        href="/rede_de_postos"
-      />
+      <section id="rede_de_postos">
+        <SectionTitle
+          title="Rede de Postos"
+          description="A Menor Preço possui uma excelente estrutura para garantir um atendimento de qualidade aos seus clientes. Conheça nossa rede de postos e desfrute de uma experiência excepcional."
+          divClassName="space-y-2"
+          button
+          buttonLabel="Confira todos os postos"
+          href="/rede_de_postos"
+        />
+        <GasStationList gas_station={GAS_STATION} />
+      </section>
 
-      <GasStationList gas_station={GAS_STATION} />
-
-      <Contact />
+      <section id="contato" className="bg-gray-50 pb-24">
+        <SectionTitle
+          title="Contato"
+          description="Fale diretamente com a nossa equipe"
+        />
+        <Contact />
+      </section>
     </>
   );
 };

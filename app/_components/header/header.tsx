@@ -13,7 +13,7 @@ const NAV_ITEMS = [
   },
   {
     label: "Nossos Produtos",
-    href: "/nossos_produtos",
+    href: "/#nossos_produtos",
   },
   {
     label: "Nossa História",
@@ -21,7 +21,7 @@ const NAV_ITEMS = [
   },
   {
     label: "Rede de Postos",
-    href: "/rede_de_postos",
+    href: "/#rede_de_postos",
   },
   {
     label: "Trabalhe Conosco",
@@ -29,7 +29,7 @@ const NAV_ITEMS = [
   },
   {
     label: "Contato",
-    href: "/contato",
+    href: "/#contato",
   },
   {
     label: "Blog MP",
@@ -41,7 +41,7 @@ const Header = () => {
   return (
     <div className="bg-primary py-2 shadow-lg">
       <div className="container">
-        <Link href="/">
+        <Link href="/" className="inline-block">
           <Image
             src="/logo.webp"
             alt="Posto Menor Preço"
@@ -50,7 +50,7 @@ const Header = () => {
           />
         </Link>
 
-        <Separator />
+        <Separator className="border-gray-200" />
       </div>
 
       <div className="container flex items-center justify-between py-4">
