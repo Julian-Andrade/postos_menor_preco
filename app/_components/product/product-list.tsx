@@ -42,15 +42,18 @@ const ProductList = () => {
       >
         <CarouselContent>
           {PRODUCTS.map((item) => (
-            <CarouselItem key={item.label} className="basis-[27%]">
+            <CarouselItem
+              key={item.label}
+              className="basis-[27%] max-[500px]:basis-[68%]"
+            >
               <CardContent className="flex items-center justify-center">
                 <ProductItem {...item} />
               </CardContent>
             </CarouselItem>
           ))}
         </CarouselContent>
-        <CarouselPrevious />
-        <CarouselNext />
+        <CarouselPrevious className="max-[500px]:hidden" />
+        <CarouselNext className="max-[500px]:hidden" />
       </Carousel>
     </>
   );

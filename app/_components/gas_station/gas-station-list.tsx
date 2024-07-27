@@ -24,15 +24,18 @@ const GasStationList = ({ gas_station }: GasStationListProps) => {
       >
         <CarouselContent>
           {gas_station.map((gasStation) => (
-            <CarouselItem key={gasStation.name} className="basis-[34%]">
+            <CarouselItem
+              key={gasStation.name}
+              className="basis-[34%] max-[500px]:basis-[87%]"
+            >
               <CardContent className="flex items-center justify-center">
                 <GasStationItem {...gasStation} />
               </CardContent>
             </CarouselItem>
           ))}
         </CarouselContent>
-        <CarouselPrevious />
-        <CarouselNext />
+        <CarouselPrevious className="max-[500px]:hidden" />
+        <CarouselNext className="max-[500px]:hidden" />
       </Carousel>
     </>
   );

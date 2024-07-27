@@ -4,7 +4,7 @@ import SectionTitle from "./_components/section-title/section-title";
 import History from "./_components/history/history";
 import GasStationList from "./_components/gas_station/gas-station-list";
 import { GAS_STATION } from "./_components/gas_station/seed";
-import Contact from "./_components/contact-form/contact";
+import Contact from "./_components/contact/contact";
 
 const Home = () => {
   return (
@@ -32,7 +32,7 @@ const Home = () => {
         <ProductList />
       </section>
 
-      <section id="nossa_historia" className="h-96 bg-gray-50">
+      <section id="nossa_historia" className="bg-gray-50 pb-12">
         <SectionTitle title="Nossa História" divClassName="py-7" />
 
         <History />

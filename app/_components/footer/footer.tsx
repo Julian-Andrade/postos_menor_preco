@@ -5,7 +5,7 @@ import Link from "next/link";
 export const Footer = () => {
   return (
     <footer className="border-t border-solid border-gray-200 py-20 text-xs">
-      <div className="container flex w-full items-center justify-between">
+      <div className="container flex w-full items-center justify-between space-y-4 max-[500px]:flex-col">
         <div>
           <Image
             src="/logo_azul.webp"
@@ -15,14 +15,14 @@ export const Footer = () => {
           />
         </div>
 
-        <div className="basis-[65%] space-y-3 text-end">
+        <div className="basis-[65%] space-y-3 text-end max-[500px]:text-center">
           <p>
             Copyright © Rede de Postos Menor Preço LTDA 2024 | CNPJ:
             00.000.000/0001-00 | Uma empresa do grupo{" "}
             <span className="font-semibold text-blue">Menor Preço</span>
           </p>
 
-          <div className="flex items-center justify-end gap-2">
+          <div className="flex items-center justify-end gap-2 max-[500px]:justify-center">
             <div className="flex items-center gap-2">
               <p>Siga a menor preço nas redes:</p>
               <Link

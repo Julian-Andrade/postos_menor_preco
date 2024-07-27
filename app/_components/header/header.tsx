@@ -40,7 +40,7 @@ const NAV_ITEMS = [
 const Header = () => {
   return (
     <div className="bg-primary py-2 shadow-lg">
-      <div className="container">
+      <div className="container items-center justify-center max-[500px]:flex">
         <Link href="/" className="inline-block">
           <Image
             src="/logo.webp"
@@ -50,10 +50,10 @@ const Header = () => {
           />
         </Link>
 
-        <Separator className="border-gray-200" />
+        <Separator className="border-gray-200 max-[500px]:hidden" />
       </div>
 
-      <div className="container flex items-center justify-between py-4">
+      <div className="container flex items-center justify-between py-4 max-[500px]:hidden">
         <nav className="flex items-center gap-7">
           {NAV_ITEMS.map((item) => (
             <NavItem {...item} key={item.label}></NavItem>
