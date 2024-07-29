@@ -25,7 +25,7 @@ const SectionTitle = ({
 }: SectionTitleProps) => {
   return (
     <>
-      <div className={cn("container py-10", divClassName)}>
+      <div className={cn("container space-y-2 py-10", divClassName)}>
         <h3 className={cn("text-[1.5rem] font-bold text-blue", titleClassName)}>
           {title}
         </h3>

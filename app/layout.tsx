@@ -4,6 +4,7 @@ import "./globals.css";
 import Header from "./_components/header/header";
 import { Toaster } from "./_components/ui/toaster";
 import { Footer } from "./_components/footer/footer";
+import { BackToTop } from "./_components/back-to-top";
 
 const poppins = Poppins({
   subsets: ["latin"],
@@ -25,10 +26,11 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body className={poppins.className}>
+        <Toaster />
+        <BackToTop />
         <Header />
         {children}
         <Footer />
-        <Toaster />
       </body>
     </html>
   );

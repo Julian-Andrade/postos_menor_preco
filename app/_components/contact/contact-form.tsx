@@ -143,7 +143,7 @@ const ContactForm = () => {
           <p className="text-sm text-red">{errors.message.message}</p>
         )}
         <Button
-          className="mx-auto mt-2 flex w-max items-center gap-2"
+          className="mx-auto mt-2 flex w-max items-center gap-2 shadow-lg shadow-blue/20"
           disabled={isSubmitting}
         >
           Enviar mensagem

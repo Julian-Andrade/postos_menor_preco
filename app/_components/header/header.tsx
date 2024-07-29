@@ -39,7 +39,7 @@ const NAV_ITEMS = [
 
 const Header = () => {
   return (
-    <div className="bg-primary py-2 shadow-lg">
+    <div className="bg-white py-2 shadow-lg">
       <div className="container items-center justify-center max-[500px]:flex">
         <Link href="/" className="inline-block">
           <Image
@@ -60,7 +60,11 @@ const Header = () => {
           ))}
         </nav>
 
-        <Button>Encontre seu posto</Button>
+        <Link href="/encontre_seu_posto">
+          <Button className="shadow-lg shadow-blue/20">
+            Encontre seu posto
+          </Button>
+        </Link>
       </div>
     </div>
   );
